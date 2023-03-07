@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+tr:nth-child(3n) {
+  @apply border-b-2;
+}
+
+td:nth-child(3n) {
+  @apply border-r-2 border-r-black;
+}
