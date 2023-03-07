@@ -16,7 +16,7 @@ export default function Tile({
     <td className="border text-lg font-semibold first:border-l-2 first:border-l-black">
       <div
         onClick={() => handleSelectedChange(state.x, state.y)}
-        className={`flex h-11 w-11 items-center justify-center text-xl hover:cursor-pointer ${
+        className={`flex h-7 w-7 items-center justify-center text-xl hover:cursor-pointer sm:h-11 sm:w-11 ${
           !state.editable && "bg-gray-100 hover:cursor-default"
         } ${selectedX == state.x && selectedY == state.y && "bg-yellow-200"}
         }`}

@@ -36,7 +36,7 @@ export default function GameBoard({ grid, setGrid }: GameBoardProps) {
   };
 
   return (
-    <div className="flex items-center gap-x-2">
+    <div className="flex flex-col items-center gap-x-2 gap-y-2 sm:flex-row sm:gap-y-0">
       <table>
         <tbody>
           {grid.map((row, i) => (
@@ -56,7 +56,7 @@ export default function GameBoard({ grid, setGrid }: GameBoardProps) {
           ))}
         </tbody>
       </table>
-      <div className="flex flex-col gap-y-1">
+      <div className="flex w-64 flex-wrap items-center justify-center gap-x-1 gap-y-1 sm:w-auto sm:flex-col sm:flex-nowrap sm:gap-x-0">
         <SelectButton
           name={"0"}
           value={"0"}
