@@ -13,7 +13,7 @@ export default function SelectButton({
     <button
       onClick={(e) => handleTileChange(e)}
       value={value}
-      className="rounded border border-blue-500 bg-transparent py-1 px-3 text-base font-semibold text-blue-700 hover:border-transparent hover:bg-blue-500 hover:text-white"
+      className="rounded border border-blue-500 bg-transparent py-1 px-3 font-semibold text-blue-700 hover:border-transparent hover:bg-blue-500 hover:text-white"
     >
       {name}
     </button>

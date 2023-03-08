@@ -56,12 +56,7 @@ export default function GameBoard({ grid, setGrid }: GameBoardProps) {
           ))}
         </tbody>
       </table>
-      <div className="flex w-64 flex-wrap items-center justify-center gap-x-1 gap-y-1 sm:w-auto sm:flex-col sm:flex-nowrap sm:gap-x-0">
-        <SelectButton
-          name={"0"}
-          value={"0"}
-          handleTileChange={handleTileChange}
-        />
+      <div className="flex w-64 flex-wrap items-center justify-center gap-x-2 gap-y-2 sm:w-auto sm:flex-col sm:flex-nowrap sm:gap-x-0">
         <SelectButton
           name={"1"}
           value={"1"}
